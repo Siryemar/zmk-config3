@@ -38,9 +38,9 @@
 // |CTRL    |F9|F10|F111|F12||  | | | | | | ALT|
 // |    | |                     |TOG |    SPACE       |GUI   |  |SHFT |ENT |BSPC | | | |
                         bindings = <
-   &trans &kp F1 &kp F2 &kp F3 &kp F4 &trans &trans &trans &trans &kp UP  &trans &kp PG_UP &kp HOME
-   &to 0 &kp F5 &kp F6 &kp F7 &kp F8  &trans  &trans &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN &kp END
-   &kp LCTRL &kp F9 &kp F10 &kp F11 &kp F12 &trans &trans &trans &trans    &trans &trans &kp LALT
+   &none &kp F1 &kp F2 &kp F3 &kp F4 &none &none &none &none &kp UP  &none &kp PG_UP &kp HOME
+   &to 0 &kp F5 &kp F6 &kp F7 &kp F8  &none  &none &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN &kp END
+   &kp LCTRL &kp F9 &kp F10 &kp F11 &kp F12 &none &none &none &none    &none &none &kp LALT
                                     &to 2   &kp SPC       &kp LGUI      &kp LSHFT &kp ENTER   &kp BSPC
                         >;
                 };
@@ -52,9 +52,9 @@
 // |ALT |UNDO |CUT |COPY |PASTE |REDO |  |, |1 |2 |3 | |ENT | 
 //                    | ADJ|SPC| GUI|   | SHIFT|ENT| 0|
                         bindings = <
-   &kp GRAVE &kp DEL &trans &kp LPAR &kp RPAR &kp BSLH &kp FSLH &kp N7 &kp N8 &kp N9 &kp MINUS &kp BSPC
-   &to 0 &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &trans &kp  STAR &kp N4 &kp N5 &kp N6 &kp PLUS &trans
-   &kp LALT &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y) &kp COMMA &kp N1 &kp N2 &kp N3 &trans &kp ENTER
+   &kp GRAVE &kp DEL &none &kp LPAR &kp RPAR &kp BSLH &kp FSLH &kp N7 &kp N8 &kp N9 &kp MINUS &kp BSPC
+   &to 0 &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &none &kp  STAR &kp N4 &kp N5 &kp N6 &kp PLUS &none
+   &kp LALT &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y) &kp COMMA &kp N1 &kp N2 &kp N3 &none &kp ENTER
    &to 3 &kp SPACE &kp LGUI &kp LSHFT &kp ENTER &kp N0
                        >;
  };
@@ -66,10 +66,10 @@
 // |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |  | | | | | |CTRL | 
 //                    | BASE|SPACE| GUI|   | SHIFT|ENT| |
 			bindings = < 
-   &trans &trans &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &trans &kp C_BKLT_TOG &kp LG(L)  &kp C_BRI_UP &kp C_BRI_DN &trans &trans
-   &to 0 &trans &kp C_RW &kp C_PP &kp C_FF &trans &trans &trans &kp LS(LG(S)) &trans &trans &trans
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &trans &trans &trans &kp LCTRL
-   &to 0 &kp SPACE &kp LGUI &kp LSHFT &kp ENTER &trans
+   &none &none &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &none &kp C_BKLT_TOG &kp LG(L)  &kp C_BRI_UP &kp C_BRI_DN &none &none
+   &to 0 &none &kp C_RW &kp C_PP &kp C_FF &none &none &none &kp LS(LG(S)) &none &none &none
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &none &kp LCTRL
+   &to 0 &kp SPACE &kp LGUI &kp LSHFT &kp ENTER &none
 			>;
 		};
 
