@@ -61,14 +61,14 @@
 
 		ADJUST_layer {
 // -----------------------------------------------------------------------------------------
-// | | |VDOWN |MUTE |VUP | |  |KBUP |LOCK |SCREENDWN |SCREENUP | |RESET | 
-// |BASE | |REW |PLAY |FF | |  |KBDOWN | |SCREENST |MARK | | | 
+// | | |VDOWN |MUTE |VUP | |  |kpUP |LOCK |SCREENDWN |SCREENUP | |RESET | 
+// |BASE | |REW |PLAY |FF | |  |kpDOWN | |SCREENST |MARK | | | 
 // |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |  | | | | | |CTRL | 
 //                    | BASE|SPACE| GUI|   | SHIFT|ENT| |
 			bindings = < 
-   &trans &trans &kB C_VOL_DN &kp C_MUTE &kp C_VOL_UP &trans &kb C_BKLT_TOG &kb LG(L)  &kb C_BRI_UP &kb C_BRI_DN &trans &trans
-   &to 0 &trans &kb C_RW &kb C_PP &kb C_FF &trans &trans &trans &kp LS(LG(S)) &trans &trans &trans
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &trans &trans &trans &kb LCTRL
+   &trans &trans &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &trans &kp C_BKLT_TOG &kp LG(L)  &kp C_BRI_UP &kp C_BRI_DN &trans &trans
+   &to 0 &trans &kp C_RW &kp C_PP &kp C_FF &trans &trans &trans &kp LS(LG(S)) &trans &trans &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &trans &trans &trans &kp LCTRL
    &to 0 &kp SPACE &kp LGUI &kp LSHFT &kp ENTER &trans
 			>;
 		};
